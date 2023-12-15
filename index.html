@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <p style="color: white"></p>
+        <input type="text" placeholder="enter city name" spellcheck="false" />
+        <button class="image">
+          <img class="search-img" src="search.jpg" />
+        </button>
+      </div>
+
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+
+      <!-- Weather -->
+      <div class="weather">
+        <img src="weather.png" class="weather-icon" />
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">New York</h2>
+        <div class="details">
+          <!-- Humidity -->
+          <div class="col">
+            <img src="humidity-vector-icon-png_266867.jpg" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <!-- Wind -->
+          <div class="col">
+            <img
+              src="png-clipart-blue-wave-illustration-wind-wind-blue-cloud-thumbnail.png"
+            />
+            <div>
+              <p class="wind">15Km/h</p>
+              <p>Wind</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
